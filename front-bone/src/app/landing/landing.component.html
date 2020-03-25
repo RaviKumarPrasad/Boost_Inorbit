@@ -1,0 +1,154 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+
+<body style="background:#E6E6FA">
+    <nav class="navbar navbar-expand-lg navbar-light nav_bar_border">
+        <img src="/assets/images/proex.svg" height="100px" width="100px" style="margin-top:1%; margin-left:5%" />
+        <div class="dropdown" style="margin-top:1%; margin-left:10%; font-size:120%;color:azure">
+            <button class="dropbtn">Products</button>
+            <div class="dropdown-content">
+                <a href="#">Twelnet</a>
+                <a href="#">PxCode</a>
+                <a href="#">xTerminal</a>
+            </div>
+        </div>
+
+
+        <form class="form-inline login">
+            <input class="form-control mr-sm-2" type="email" placeholder="Email" name="email" [(ngModel)]="user.email" />
+            <input class="form-control mr-sm-2" type="password" placeholder="Password" name="password" [(ngModel)]="user.password" />
+            <!-- <a routerLink='profile'>  -->
+            <button class="btn btn-primary my-2 my-sm-0" type="submit" (click)='onSubmit()' style="background-color:rgba(33, 132, 150, 0.678);color:#f28500; font-weight:bold">Login</button>
+            <!-- </a> -->
+        </form>
+
+        <a class="signup_form register" style="margin-top:1%;font-size:150%;color:#f28500" routerLink='register'> Register</a>
+
+    </nav>
+
+    <div class="media banner">
+        <img class="media-body" src="/assets/images/banner3.svg" />
+    </div>
+
+
+    <div class="zudoov" style="background-color:#f3f2ca">
+        <div class="col offset-lg-0" style="margin-top:10%">
+            <img src="/assets/images/Thread1.svg" height="100px" width="100px" style="margin-top:0%; margin-left:45%" />
+            <h1 style="margin-top:-1%; margin-left:45%; font-size:200%; font-weight:bold; color:#f28500"> Zudoov </h1>
+            <h1 style="margin-top:-1%; margin-left:35%; font-size:200%; font-weight:bold; color:rgb(62, 110, 72)"> A Humanoid Contextual Brain </h1>
+            <p class="hiring_acknowledgement">
+                Zudoov is an Artificial Intelligence recuitement tool which helps to evaluate job seeker's resume to find out best local and global jobs. To know more about <a routerLink="zudoov" style="color:#f28500">Zudoov</a>.
+            </p>
+        </div>
+    </div>
+
+    <div >
+        <div class="tthread" >
+            <img src="/assets/images/Thread1.svg" height="100px" width="100px" style="margin-left:45%" />
+            <h1 style="margin-top:-1%; font-size:200%; font-weight:bold; color:#f28500"> Thunder Threads</h1>
+            <p class="hiring_acknowledgement">
+                Job searching is a difficult task and time consuming, going through all Job Descriptions makes you tired. Is it ? <br> And at the same duration, looking for a partner for your own bussiness, is also a very difficult task.<br> Thunder Threads
+                is a multitasking plateform, where multiple tasks can be created for multiple tasks at the same time with zero time consuming by threading our Humanoid Contextual Brain, we called it as <a routerLink="zudoov" style="color:#f28500">Thunder Threads</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="navbar navbar-expand-lg navbar-light thunder_thread" style="background-color:aliceblue">
+        <div class="col offset-lg-0" style="margin-top:-10%">
+            <img src="/assets/images/Thread1.svg" height="100px" width="100px" style="margin-top:0%; margin-left:45%" />
+            <h1 style="margin-top:-1%; margin-left:37%; font-size:200%; font-weight:bold; color:#f28500">Live Interview Feedback</h1>
+            <p class="hiring_acknowledgement">
+                During candidate's interview, employers can choose live interview feedback option for more accuracy in talent hiring process through live interview feedback.To know more about <a routerLink="zudoov" style="color:#f28500">Live Interview Feedback</a>.
+            </p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light mutants">
+        <div class="col offset-lg-0" style="margin-top:-10%">
+            <!-- <img src="/assets/images/mutant.svg" height="100px" width="100px" style="margin-top:-7%; margin-left:45%"/> -->
+            <h1 style="margin-top:0%; margin-left:43%; font-size:200%; font-weight:bold; color:#f28500">Total Jobs</h1>
+            <svg height="150" width="150" style="margin-left:43%">
+                    <circle cx="50%" cy="50%" r="60" stroke="#f28500" stroke-width="20" fill="white" />
+                    <text x="50%" y="50%" text-anchor="middle" stroke="rgb(62, 110, 72)" stroke-width="1px" dy=".3em">{{Total_Jobs}}</text>
+
+                </svg>
+        </div>
+    </nav>
+
+    <div class="navbar navbar-expand-lg navbar-light" style="margin-bottom:0%; background:rgba(22, 77, 33, 0.9);height:200px">
+
+        <table class="col " style=" margin-left:10%; margin-top:-5%">
+            <thead>
+                <tr>
+                    <th>
+                        <h1 style="font-size:200%; font-weight:bold; color:#f28500"><u>Products</u></h1>
+                    </th>
+                    <th>
+                        <h1 style="font-size:200%; font-weight:bold; color:#f28500"><u>ProEx</u></h1>
+                    </th>
+                    <th>
+                        <h1 style="font-size:200%; font-weight:bold; color:#f28500"><u>UnionStack</u></h1>
+                    </th>
+                    <th>
+                        <h1 style="font-size:200%; font-weight:bold; color:#f28500"><u>Contact Us</u></h1>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a style="color:azure" routerLink='twelnet'>Twelnet</a></td>
+                    <td><a style="color:azure" routerLink="team">Team</a></td>
+                    <td><a style="color:azure">>>Programmings</a></td>
+                    <td><a style="color:azure">sir.ayaz47@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><a style="color:azure" routerLink='pxcode'>PxCode</a></td>
+                    <td><a style="color:azure">Developers</a></td>
+                    <td><a style="color:azure">>>Articles</a></td>
+                    <td>
+                        <a style="color:azure"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a style="color:azure">xTerminal</a></td>
+                    <td><a style="color:azure">Pricing Tags</a></td>
+                    <td>
+                        <a style="color:azure"></a>
+                    </td>
+                    <td>
+                        <a style="color:azure"></a>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <a style="color:azure"></a>
+                    </td>
+                    <td><a style="color:azure">PxVlog</a></td>
+                    <td>
+                        <a style="color:azure"></a>
+                    </td>
+                    <td>
+                        <a style="color:azure"></a>
+                    </td>
+                    <td>
+                        <a style="color:azure"></a>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+</body>

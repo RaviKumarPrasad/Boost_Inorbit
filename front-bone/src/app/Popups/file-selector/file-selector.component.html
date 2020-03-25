@@ -1,0 +1,12 @@
+
+<div class="descriptionArea">
+        
+    <textarea name="description" id="description" class="description" cols="100" rows="10" [(ngModel)]="description"></textarea>
+    <div class="save" style="margin-left:81%;  margin-top:1%">
+        <button class="btn btn-primary my-2 my-sm-0 savebtn" type="submit" style="background-color:rgb(73, 126, 84)" (click) = "descriptionPublish()">Publish</button>
+    </div>
+    <div class="cancel" style="margin-left:8%; margin-top:-5%">
+        <input type="file" style="display:none"  id="fileId" name="fileId" (change)="onFileChange($event)" accept="image/png, image/jpg, image/jpeg">
+        <button class="btn btn-primary my-2 my-sm-0 cancelbtn" type="submit" style="background-color:rgb(85, 214, 11)" (click) = "fileAtttach()" >Attach</button>
+    </div>
+</div>

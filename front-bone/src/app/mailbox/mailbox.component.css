@@ -1,0 +1,184 @@
+
+nav.nav_bar_border{
+    background:rgb(62, 110, 72);
+    height:40px;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+}
+
+ 
+.jobsbtn, .mailboxbtn, .messagesbtn, .homebtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 120%;
+    font-weight: 100;     
+    padding: 1px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 48px;
+    border-radius: 0%;
+    box-shadow: -2px 0px rgb(73, 126, 84);
+    position: relative;
+}
+.jobs:hover .jobsbtn, .mailbox:hover .mailboxbtn, .messages:hover .messagesbtn, .home:hover .homebtn{
+    background:rgb(73, 126, 84);
+    height: 48px;
+    color: #f28500;
+
+}
+
+.profilebtn {
+    border: none;
+    outline: none;
+    border-radius:50%;
+    padding: 1px 1px;
+    height:45px;
+    width:40px;
+    color: rgba(255, 255, 255, 0.747);
+    background-color: inherit;
+    font-family: inherit;
+    box-shadow: -2px 0px rgb(73, 126, 84);
+    position: relative;
+    
+}
+
+.profile:hover .profilebtn{
+    background:rgb(73, 126, 84);
+    height: px;
+    color: #f28500;
+    border: 2px solid rgb(163, 146, 109);
+
+}
+   
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 48px;
+    box-shadow: -2px 0px rgb(73, 126, 84);
+    border-radius: 5%;
+  }
+  
+  .nav_bar_border a:hover, .dropdown:hover .dropbtn {
+    background:rgb(73, 126, 84);
+    color: #f28500;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: -2px 2px rgba(241, 182, 142, 0.2);
+    z-index: 1;
+    margin-left: -25%;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 80%;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    margin-left: 0%;
+    font-weight: 500;     
+    text-align: center;
+
+  }
+  
+  .dropdown-content a:hover {
+    background:rgb(218, 233, 221);
+    font-weight: bold;     
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+div.message_template{
+  height: 90%;
+  width: 83%;
+  margin-top: 3.8%;
+  border: 2px solid rgb(241, 203, 119);
+  background-color: rgb(219, 196, 146);
+} 
+div.form_search{
+  height: 100%;
+  width: 27.5%;
+  margin-top: 0%;
+  margin-left: 0.5%;
+  background-color: rgb(240, 228, 202);
+  border: 2px solid rgb(241, 203, 119);
+  /* box-shadow: -2px 0px rgb(235, 149, 51); */
+  /* background-color:red; */
+  
+}
+div.form_search .form{
+  margin-top: 50px;
+}
+.msg_templatebtn{
+  border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 100%;
+    font-weight: 600;     
+    padding: 0px 2px;
+    background-color: rgb(62, 110, 72);
+    font-family: inherit;
+    margin: 0;
+    height: 25px;
+    border-radius: 0%;
+    box-shadow: -2px 0px rgb(73, 126, 84);
+    position: relative;
+}
+
+div.msg_exclusion{
+  height: 100%;
+  width: 51.8%;
+  margin-top: -55.5%;
+  margin-left: 28%;
+  background-color: rgb(240, 228, 202);
+  border: 2px solid rgb(241, 203, 119);
+}
+
+
+
+
+div.online_pro{
+  height: 620px;
+  width: 200px;
+  background-color: rgb(219, 196, 146);
+  border: 2px solid rgb(241, 203, 119);
+  padding: 0px;
+  bottom: 0%;
+  right: 0.3%;
+  overflow:auto;
+  position: fixed;
+}
+
+div.online_pro_search{
+  height: 25px;
+  width: 200px;
+  background: rgb(62, 110, 72);
+  right: 0.3%;
+  bottom: 0%;
+  position: fixed;
+  border-radius: 20%;
+
+}
+
+div.online_pro_search input{
+  width: 200px;
+}
+
+

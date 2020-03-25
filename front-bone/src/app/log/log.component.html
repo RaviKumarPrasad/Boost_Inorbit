@@ -1,0 +1,276 @@
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body style="background:rgb(240, 237, 237)" id="body_not_transparent" >
+        <nav class="navbar navbar-expand-lg navbar-light nav_bar_border" >
+            <img src="/assets/images/proex.svg" height="80px" width="80px" style="margin-top:1%; margin-left:0%"/>
+            <form class="form-inline" style="margin-left:1%">
+                <input class="form-control mr-sm-2" type="text" size="45%" placeholder="Search" name="exclusion_name" [(ngModel)]="exclusion_name"/>
+                <button class="btn btn-primary my-2 my-sm-0" mat-button [matMenuTriggerFor]="menu" type="submit" style="background-color:rgb(73, 126, 84)" name="search_exclusion" (click)="search_exclusion()" >Search</button>
+                <mat-menu #menu="matMenu" class="my-class">
+                    <ul class="list-group" id="list-group">
+                        <u class="activate"><li class="list-group-item activate">View All</li></u>
+                    </ul>
+                </mat-menu>
+
+            </form>
+
+                <div class="jobs" style="margin-top:0%; margin-left:5%; font-size:100%">
+                    <button class="jobsbtn" routerLink = "jobs" >Jobs</button>
+                </div>
+
+                <div class="mailbox" style="margin-top:0%; margin-left:0%; font-size:100%">
+                    <button class="mailboxbtn" routerLink = "mailbox" >Mailbox</button>
+                </div>
+
+                <div class="messages" style="margin-top:0%; margin-left:0%; font-size:100%">
+                    <button class="messagesbtn" routerLink = "messages" >Messages</button>
+                </div>
+
+                <div class="home" style="margin-top:0%; margin-left:0%; font-size:100%">
+                    <button class="homebtn" routerLink = "home" >Home</button>
+                </div>
+
+                <div class="profile" style="margin-top:0%; margin-left:1%; font-size:100%">
+                    <img src={{profilePicture}} class="profilebtn" routerLink = "profile"/>
+                </div>
+                <div class="profile" style="margin-top:0%; margin-left:5%; font-size:100%">
+                    <mat-icon matTooltip="Notifications" matTooltipClass='red-tooltip'  class="iconColor" aria-hidden="false" aria-label="Example home icon">
+                        public
+                    </mat-icon>
+                </div>
+
+                <div class="dropdown" style="margin-top:0%; margin-left:5%; font-size:120%;color:azure">
+                    <button class="dropbtn" >Settings</button>
+                    <div class="dropdown-content">
+                      <a href="#">Help</a>
+                      <a href="threadings">Threadings</a>
+                      <a href="#">Fork</a>
+                      <a href="#">Services</a>
+                      <a href="#">xTerminal</a>
+                      <a href="#">UnionStack</a>
+                      <a href="#">Learning Point</a>
+                      <a href="#">Logout</a>
+                    </div>
+                </div>
+
+
+        </nav>
+
+        <!-- This is for background picture -->
+        <div class="background_image" >
+            <img src={{backgroundPicture}} (click) = "createBackgroundPicture()"/>
+        </div>
+        <div class="username">
+            <p>{{name}}</p>
+        </div>
+        <div class="template">
+            <div *ngIf="is_hidden_request" class="career" style="margin-top:0%; margin-left:14.9%; font-size:100%" >
+                    <button class="careerbtn" (click)="createCollection()" >Request</button>
+            </div>
+            <!-- <div class="career" style="margin-top:-4.2%; margin-left:57.1%; font-size:100%">
+                <button class="careerbtn" (click)="careerFunction($event)" >Career</button>
+            </div> -->
+            <!-- <div class="activity" style="margin-top:-4.3%; margin-left:64.5%; font-size:100%">
+                <button class="activitybtn" (click) = "createActivity()">Activity</button>
+                <button class="activitybtn" (click)="proListFunction($event)" routerLink = "log" >Logs</button>
+
+            </div>
+ -->
+            <div class="career" style="margin-top:-4.3%; margin-left:90.5%; font-size:100%">
+                <div class="profileSetting" style="margin-top:0%; margin-left:12%; font-size:120%;color:azure">
+                    <button class="settingbtn" >Settings</button>
+                    <div class="setting-content">
+                        <a href="#">View</a>
+                        <a href="#">Block</a>
+                        <a href="#">Report</a>
+                        <a href="#">Privacy</a>
+                        <a href="log">Logs</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="career" style="margin-top:-4.2%; margin-left:76%; font-size:100%">
+                <button class="careerbtn" (click)="createProList()" >Exclusions</button>
+                <button class="careerbtn" (click)="proListFunction($event)" >Exclusions</button>
+            </div> -->
+            <!-- <div class="career" style="margin-top:-4.2%; margin-left:64.9%; font-size:100%">
+                <button class="careerbtn" (click)="createCollection()" >Collections</button>
+                <button class="careerbtn" (click)="proListFunction($event)" >Collections</button>
+            </div> -->
+
+        </div>
+
+        <div class="col-lg-2 profile_image">
+            <img src={{profilePicture}} (click) = "createProfilePicture()"/>
+        </div>
+
+        <!-- <div [ngClass] = "{'designation' : css_conditional, 'designation_conditional' : !css_conditional}"> -->
+        
+        <mat-card class="current_designation">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>C++ Software Engineer  </mat-card-title>
+                <mat-card-subtitle>Erwin pvt ltd, {{'Hyderabad'}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+        </mat-card>
+    
+        <!-- <div class="about">
+            <p class="edit" (click) = "createAbout()" ><u>Edit</u></p>
+            <p class="description">{{description}}</p>
+        </div> -->
+        <!-- <div class="past_designation">
+            <p class="edit" (click) = "createPastDesignations()"><u>Edit</u></p>
+            <p class="description">{{past_designation}}</p>
+        </div>
+        <div class="skills">
+            <p class="edit" (click) = "createSkills()"><u>Edit</u></p>
+            <p class="description">{{skills}} </p>
+        </div> -->
+        <!-- <div class="articles">
+            <p class="description">{{"::Activity:: "}}</p>
+            <p class="description">{{"::xLoggers:: "}}</p>
+            <p class="description">{{"::Fork:: "}}</p>
+            <p class="description">{{"::UnionStack:: "}}</p>
+        </div> -->
+        <mat-card class="current_designation">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{"Fork"}}</mat-card-title>
+                <mat-icon class="Fork_add_circle_outline" (click)='createExperience()'>add_circle_outline</mat-icon>
+                <mat-card-subtitle>GitHub Connection</mat-card-subtitle>
+                    
+            </mat-card-header>
+<!--         
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{"Activity"}}</mat-card-title>
+                <mat-card-subtitle>Other activities</mat-card-subtitle>
+                    
+            </mat-card-header>
+         -->
+
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{"xLoggers"}}</mat-card-title>
+                <mat-card-subtitle>Smart Logger</mat-card-subtitle>
+                
+            </mat-card-header>
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{"UnionStack"}}</mat-card-title>
+                <mat-card-subtitle>Master Code</mat-card-subtitle>
+                    
+            </mat-card-header>
+
+        </mat-card>
+
+        <div class="update_template">
+            <pre><p class="update_label">Exclusions              <u>{{numberOfExclusions}}</u> </p></pre>
+            <div class="update_container">
+                <mat-dialog-content class="mat-typography">
+                    <mat-grid-list cols="3" rowHeight="1:1"> <!-- [innerHTML]="elements">  -->
+                        <mat-grid-tile>
+                            <img src="{{src1}}" height="100%" width="100%">
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <img src="{{src2}}" height="100%" width="100%">
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <img src="{{src3}}" height="100%" width="100%">
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <img src="{{src4}}" height="100%" width="100%">
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <img src="{{src5}}" height="100%" width="100%">
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <img src="{{src6}}" height="100%" width="100%">
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <img src="{{src7}}" height="100%" width="100%">
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <img src="{{src8}}" height="100%" width="100%">
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <img src="{{src9}}" height="100%" width="100%">
+                        </mat-grid-tile>
+                    </mat-grid-list>
+
+                </mat-dialog-content>
+            </div>
+        </div>
+
+
+        <!-- <div class="post_template" *ngIf="is_hidden_post">
+                <textarea name="post_container" class="post_container" cols="80" rows="3" placeholder="Write short messages to share"></textarea>
+                <div class="post_footer">
+                    <div class="video_clip" style="margin-top:0%; margin-left:0%; font-size:100%">
+                        <button class="video_clip_btn" (click)="createFile()" >Attachments</button>
+                    </div>
+
+                    <div class="normal_text" style="margin-top:-8.2%; margin-left:35.5%; font-size:100%">
+                        <button class="normal_text_btn" (click)="createText()" >Article</button>
+                    </div>
+
+                    <div class="pxcode" style="margin-top:-8.3%; margin-left:58%; font-size:100%">
+                        <button class="pxcode_btn" routerLink = "#" >xCoder </button>
+                    </div>
+
+                    <div class="pxcode" style="margin-top:-8.2%; margin-left:81.5%; font-size:100%">
+                        <button class="pxcode_btn" routerLink = "#" >say</button>
+                    </div>
+
+                    <div class="post" style="margin-top:-18.9%; margin-left:85%; font-size:100%">
+                        <button class="post_btn" routerLink = "#" >Enter</button>
+                    </div>
+
+                </div>
+            </div> -->
+        <!-- <div class="new_post_template" *ngIf="is_hidden_post">
+                <mat-icon>send</mat-icon>
+        </div> -->
+        <mat-card class="new_post_template">
+            <mat-icon>send</mat-icon>
+        
+        </mat-card>
+        
+        <div *ngIf="is_hidden_proList" class="career_point" >
+                <app-pro-list></app-pro-list>
+        </div>
+<!-- 
+        <div *ngIf="is_hidden_career" class="career_point" >
+            <app-career></app-career>
+        </div> -->
+
+        <div *ngIf="is_hidden_activity" class="career_point" >
+            <app-activity></app-activity>
+
+        </div>
+
+        <div class=" online_pro">
+            <div class="online_pro_search">
+                <input class="form-control mr-sm-2" type="text" size="60%" placeholder="Search"/>
+
+            </div>
+        </div>
+
+    </body>

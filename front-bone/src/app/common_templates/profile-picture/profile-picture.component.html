@@ -1,0 +1,21 @@
+
+<div class="cancel">
+    <button class="btn btn-primary my-2 my-sm-0 cancelBtn" type="submit" (click) = "onCancel()">X</button>
+</div>
+
+<div class="profilePicture">
+    <img src={{profilePicture}} alt="" height="100%" width="100%">
+</div>
+
+<div class="change">
+    <input type="file" style="display:none"  id="fileId" name="fileId" (change)="onFileChange($event)" accept="image/png, image/jpeg, image/jpg">
+    <button class="btn btn-primary my-2 my-sm-0 submitBtn" type="submit" (click) = "onSubmit()" >Change</button>
+</div>
+
+<div class="leftShift">
+    <button class="btn btn-primary my-2 my-sm-0 leftBtn" type="submit" (click) = "leftShift()"  > < </button>    
+</div>
+
+<div class="rightShift">
+    <button class="btn btn-primary my-2 my-sm-0 rightBtn" type="submit" (click) = "rightShift()"  > > </button>    
+</div>

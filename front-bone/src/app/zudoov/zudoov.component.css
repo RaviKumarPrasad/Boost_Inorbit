@@ -1,0 +1,125 @@
+
+.en_navbar{
+    background:green
+       
+   }
+   
+   nav.nav_bar_border{
+       background:rgb(62, 110, 72);
+       height:60px;
+       width: 100%;
+       position:fixed;
+       top:0px;
+       left:0px;
+   }
+   
+   nav.nav_bar_banner{
+       margin-top:4.7%; 
+       background:#f0e5e5;
+       height:400px;
+       position: static;
+   }
+   
+   div.hiring_process{
+       margin-top:-1.6%; 
+       background:#f0e5e5;
+       height:400px;
+       position: static;
+       overflow: auto;
+   }
+   p.hiring_acknowledgement{
+       margin-left: 10%;
+       font-weight: bold;
+       font-size: 150%;
+   }
+   
+   div.thunder_thread{
+       margin-top:-1.5%; 
+       background:#e6f5e6;
+       height:400px;
+       position: static;
+   }
+   
+   
+   nav.mutants{
+       margin-top:-1.5%;
+       background:#f0e5e5;
+       height:400px;
+       position: static;
+   }
+
+   p.total_jobs{
+       font-size: 120%;
+       font-weight: bold;
+       color: rgb(62, 110, 72);
+       margin-left: 45%;
+       position: static;
+
+   }
+
+
+nav.nav_bar_border a.product:hover{
+    background-color: rgb(241, 196, 48);
+ }
+ 
+ /* 
+ .dropdown {
+     float: left;
+     overflow: hidden;
+   }
+    */
+    
+   .dropdown .dropbtn {
+     border: none;
+     outline: none;
+     color: white;
+     padding: 14px 16px;
+     background-color: inherit;
+     font-family: inherit;
+     margin: 0;
+     height: 48px;
+     border-radius: 5%;
+   }
+   
+   .nav_bar_border a:hover, .dropdown:hover .dropbtn {
+     background:rgb(73, 126, 84);
+    color: #f28500;
+     
+ }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 150px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+   }
+   
+   .dropdown-content a {
+     float: none;
+     color: black;
+     font-size: 80%;
+     padding: 10px 10px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+   }
+   
+   .dropdown-content a:hover {
+     /* background-color: rgb(121, 64, 64); */
+     background:rgb(218, 233, 221);
+     
+   }
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+td a:hover{
+    background-color: #f28500;
+}
+
+ 
+
+   

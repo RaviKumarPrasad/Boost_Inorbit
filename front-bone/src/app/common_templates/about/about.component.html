@@ -1,0 +1,11 @@
+
+<div class="descriptionArea">
+        
+    <textarea name="description" id="description" class="description" cols="80" rows="6" [(ngModel)]="description" placeholder="Write something about your experiences" ></textarea>
+    <div class="save" style="margin-left:81%;  margin-top:1%">
+        <button class="btn btn-primary my-2 my-sm-0 savebtn" type="submit" style="background-color:rgb(73, 126, 84)" (click) = "onSubmit()">Save</button>
+    </div>
+    <div class="cancel" style="margin-left:8%; margin-top:-5%">
+        <button class="btn btn-primary my-2 my-sm-0 cancelbtn" type="submit" style="background-color:rgb(250, 55, 6)" (click) = "onCancel()" >Cancel</button>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+
+
+<div class="company_details ">
+    <div class="cancel">
+        <button class="btn btn-primary my-2 my-sm-0 cancelBtn" type="submit" (click) = "onCancel()">X</button>
+    </div>
+    <form class="form-inline" style="margin-left:1%">
+        <input class="form-control mr-sm-2" type="text" size="130%" placeholder="Search" name="name" [(ngModel)]="name"/>
+        <button class="btn btn-primary my-2 my-sm-0" type="submit" style="background-color:rgb(73, 126, 84)" (click)=search()>Search</button>
+    </form>
+</div>
+<mat-dialog-content class="mat-typography">
+    <div class="album"> 
+        <mat-grid-list cols="4" rowHeight="1:1"> <!-- [innerHTML]="elements">  -->
+            <mat-grid-tile>1</mat-grid-tile>
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>5</mat-grid-tile>
+            <mat-grid-tile>6</mat-grid-tile>
+            <mat-grid-tile>7</mat-grid-tile>
+            <mat-grid-tile>8</mat-grid-tile>
+            <mat-grid-tile>9</mat-grid-tile>
+            <mat-grid-tile>10</mat-grid-tile>
+            <mat-grid-tile>11</mat-grid-tile>
+                
+        </mat-grid-list>
+    </div>
+                
+</mat-dialog-content>
+        

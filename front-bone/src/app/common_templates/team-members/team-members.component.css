@@ -1,0 +1,55 @@
+
+
+div.thunder_thread{
+    margin-top:-1%; 
+    background:#f3f2bf;
+    height:300px;
+    border: 1px solid #ddd;
+    padding: 1px;
+    position: static;
+}
+div.member_image{ 
+    background:#f3f2bf;
+    border-radius: 10%;       
+    position: static;
+}
+
+div.member_image img{ 
+    position: static;
+    border-radius: 5%;
+    border: 1px solid rgb(179, 175, 175);
+    padding: 2px;
+}
+
+div.name {
+  margin-top: -12%;
+  margin-left: 20%;
+}
+
+div.name p{
+    font-size: 200%;
+    font-weight: bold;
+
+}
+
+div.designation {
+    margin-top: -7%;
+    margin-left: -10%;
+}
+  
+div.designation p{
+    font-size: 100%;
+    font-weight: bold;
+}
+
+
+div.about {
+    margin-top: 5%;
+    margin-left: -20%;
+}
+  
+div.about ul{
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}

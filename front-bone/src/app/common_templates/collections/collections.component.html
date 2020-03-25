@@ -1,0 +1,59 @@
+
+
+<div class="company_details ">
+    <div class="cancel">
+        <button class="btn btn-primary my-2 my-sm-0 cancelBtn" type="submit" (click) = "onCancel()">X</button>
+    </div>
+    <form class="form-inline" style="margin-left:1%">
+        <input class="form-control mr-sm-2" type="text" size="130%" placeholder="Search" name="name" [(ngModel)]="name"/>
+        <button class="btn btn-primary my-2 my-sm-0" type="submit" style="background-color:rgb(73, 126, 84)" (click)=search()>Search</button>
+    </form>
+</div><br>
+
+
+<mat-dialog-content class="mat-typography">
+    <div class="album"> 
+        <mat-grid-list cols="2" rowHeight="1:1"> <!-- [innerHTML]="elements">  -->
+    
+                <mat-grid-tile>
+                    <img src="{{src1}}" height="100%" width="100%">
+                </mat-grid-tile>
+    
+                <mat-grid-tile>
+                    <img src="{{src2}}" height="100%" width="100%">
+                </mat-grid-tile>
+    
+                <mat-grid-tile>
+                    <img src="{{src3}}" height="100%" width="100%">
+                </mat-grid-tile>
+    
+                <mat-grid-tile>
+                    <img src="{{src4}}" height="100%" width="100%">
+                </mat-grid-tile>
+        
+        </mat-grid-list>
+    </div>
+
+    <div class="background"> 
+            <mat-grid-list cols="2" rowHeight="1:1"> <!-- [innerHTML]="elements">  -->
+        
+                    <mat-grid-tile>
+                        <img src="{{src1}}" height="100%" width="100%">
+                    </mat-grid-tile>
+        
+                    <mat-grid-tile>
+                        <img src="{{src2}}" height="100%" width="100%">
+                    </mat-grid-tile>
+        
+                    <mat-grid-tile>
+                        <img src="{{src3}}" height="100%" width="100%">
+                    </mat-grid-tile>
+        
+                    <mat-grid-tile>
+                        <img src="{{src4}}" height="100%" width="100%">
+                    </mat-grid-tile>
+            
+            </mat-grid-list>
+        </div>
+        
+</mat-dialog-content>

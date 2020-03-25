@@ -1,0 +1,34 @@
+
+<h2 mat-dialog-title>Experience</h2>
+<mat-dialog-content class="mat-typography">
+    <mat-form-field class="designation">
+        <input class="input_text" matInput placeholder="Designation" name="Designation" [(ngModel)]="data.designation">
+    </mat-form-field>
+    <mat-form-field class="organization">
+        <input matInput placeholder="Organization" name="Organization" [(ngModel)]="data.organisation">
+    </mat-form-field><br>
+    
+    <mat-form-field  class="from_Date">
+        <input matInput [matDatepicker]="picker" placeholder="From" [(ngModel)]="data.fromDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>    
+    </mat-form-field>
+    <mat-form-field class="to_Date" >
+        <input matInput [matDatepicker]="picker2" placeholder="To" [(ngModel)]="data.toDate">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>   
+    </mat-form-field>
+    <mat-checkbox class="present_Date">Present</mat-checkbox>
+    <mat-form-field class="description_field" >
+        <mat-placeholder class="placeholder">Write something about experience</mat-placeholder>
+        <textarea matInput class="description" rows="9" cols="70" [(ngModel)]="data.description" >
+
+        </textarea>
+    
+    </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <!-- <button mat-button mat-dialog-close>Cancel</button> -->
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="save()">Save</button>
+</mat-dialog-actions>

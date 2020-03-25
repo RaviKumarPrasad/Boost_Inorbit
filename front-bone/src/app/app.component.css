@@ -1,0 +1,50 @@
+
+.en_navbar{
+    background:green
+       
+   }
+   
+   nav.nav_bar_border{
+       background:rgb(62, 110, 72);
+       height:60px;
+       width: 100%;
+       position:fixed;
+       top:0px;
+       left:0px;
+   }
+   
+   nav.nav_bar_banner{
+       margin-top:4.7%; 
+       background:#f0e5e5;
+       height:400px;
+       position: static;
+   }
+   
+   div.hiring_process{
+       margin-top:-1.6%; 
+       background:#f0e5e5;
+       height:400px;
+       position: static;
+       overflow: auto;
+   }
+   p.hiring_acknowledgement{
+       margin-left: 10%;
+       font-weight: bold;
+       font-size: 150%;
+   }
+   
+   div.thunder_thread{
+       margin-top:-1.5%; 
+       background:#e6f5e6;
+       height:400px;
+       position: static;
+   }
+   
+   
+   nav.mutants{
+       margin-top:-1.5%;
+       background:#f0e5e5;
+       height:400px;
+       position: static;
+   }
+   

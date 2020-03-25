@@ -1,0 +1,79 @@
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        
+    </head>
+    
+    <body style="background:rgb(240, 237, 237)" >
+        <nav class="navbar navbar-expand-lg navbar-light nav_bar_border" >
+            <img src="/assets/images/proex.svg" height="80px" width="80px" style="margin-top:1%; margin-left:0%"/>            
+            <form class="form-inline" style="margin-left:1%">
+                <input class="form-control mr-sm-2" type="text" size="45%" placeholder="Search"/>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit" style="background-color:rgb(73, 126, 84)">Search</button>
+            </form>
+                <div class="jobs" style="margin-top:0%; margin-left:5%; font-size:100%">
+                    <button class="jobsbtn" routerLink = "jobs" >Jobs</button>
+                </div>
+        
+                <div class="mailbox" style="margin-top:0%; margin-left:0%; font-size:100%">
+                    <button class="mailboxbtn" routerLink = "mailbox" >Mailbox</button>
+                </div>
+
+                <div class="messages" style="margin-top:0%; margin-left:0%; font-size:100%">
+                    <button class="messagesbtn" routerLink = "messages" >Messages</button>
+                </div>
+            
+                <div class="home" style="margin-top:0%; margin-left:0%; font-size:100%">
+                    <button class="homebtn" routerLink = "home" >Home</button>
+                </div>
+
+                <div class="profile" style="margin-top:0%; margin-left:1%; font-size:100%">
+                    <img src="/assets/images/Nafis.jpg" class="profilebtn" (click)="proListFunction($event)"/>
+                </div>
+                <div class="dropdown" style="margin-top:0%; margin-left:12%; font-size:120%;color:azure">
+                    <button class="dropbtn" >Settings</button>
+                    <div class="dropdown-content">
+                      <a href="#">Help</a>
+                      <a href="#">Threadings</a>
+                      <a href="#">Fork</a>
+                      <a href="#">Services</a>
+                      <a href="#">Products</a>
+                      <a href="#">UnionStack</a>
+                      <a href="#">Logout</a>
+                    </div>
+                </div>            
+                
+
+        </nav>
+        
+        <div class="message_template">
+            <div class="form_search"><br>
+                <form class="form-inline" style="margin-left:1%;  margin-top:0%;">
+                    <input class="form-inlin mr-sm-2" type="text" size="32%" placeholder=" Search"/>
+                    <button type="submit" class="btn btn-primary my-2 my-sm-0 msg_templatebtn">Search</button>
+                </form>
+                <hr>
+                <div class="exclusion">
+
+                </div>
+            </div>
+            <div class="msg_exclusion">
+                    
+            </div>
+            
+        </div>
+
+        <div class=" online_pro">
+            <div class="online_pro_search">
+                <input class="form-control mr-sm-2" type="text" size="60%" placeholder="Search"/>
+
+            </div>
+        </div>
+
+</body>

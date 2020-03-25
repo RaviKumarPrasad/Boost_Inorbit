@@ -1,0 +1,742 @@
+
+body_not_transparency{
+}
+
+.body_transparency{
+    background-color: red;
+    /* opacity: 0.3; */
+    /* filter: blur(1px); */
+    /* margin-top: -3.8%; */
+}
+
+nav.nav_bar_border{
+    background:rgb(62, 110, 72);
+    height:40px;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+}
+
+/*
+::ng-deep .my-class {
+    margin-left: 0px;
+    width: 1000px;
+    max-width: 1000px;
+}
+.cdk-overlay-pane.mat-menu-panel {
+    max-width: none;
+}
+.list-group{
+    width: 400px; 
+
+}
+
+*/
+
+.cdk-overlay-pane {width: 100%!important;}
+.mat-menu-panel {
+    margin-left: 10px;
+    margin-top: 5px;
+    max-width: 100%!important; 
+    min-width: 500px!important;
+
+}
+.list-group{
+    text-align: center;
+
+}
+.list-group .activate{
+    background:rgb(62, 110, 72);
+    color: #f28500;
+    font-size: 120%;
+    
+}
+mat-icon.iconColor{
+    color: rgba(255, 255, 255, 0.747);
+    background:rgb(62, 110, 72);
+    font-size: 220%;
+    
+}
+
+div.dynamic_div{
+    height: 50px;
+    width: 500px;
+
+}
+div.dynamic_div .dynamic_img{
+    height: 40px;
+    width: 40px;
+    margin-left: -90%;
+    margin-top: -1%;
+    border-radius: 50%;
+    border: 1px solid rgb(163, 146, 109);
+    padding: 0px;
+
+}
+div.dynamic_div .dynamic_p{
+    margin-top: -7%;
+    margin-left: -60%;
+
+}
+
+/* ::ng-deep  */
+.red-tooltip {
+    /* your own custom styles here */ 
+    /* e.g. */
+    color: yellow;
+    background: red;
+    margin-left: 500px;
+}
+
+.jobsbtn, .mailboxbtn, .messagesbtn, .homebtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 120%;
+    font-weight: 100;
+    padding: 1px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 48px;
+    border-radius: 0%;
+    box-shadow: -2px 0px rgb(73, 126, 84);
+    position: relative;
+}
+.jobs:hover .jobsbtn, .mailbox:hover .mailboxbtn, .messages:hover .messagesbtn, .home:hover .homebtn{
+    background:rgb(73, 126, 84);
+    height: 48px;
+    color: #f28500;
+
+}
+
+.profilebtn {
+    border: none;
+    outline: none;
+    border-radius:50%;
+    padding: 1px 1px;
+    height:45px;
+    width:40px;
+    color: rgba(255, 255, 255, 0.747);
+    background-color: inherit;
+    font-family: inherit;
+    box-shadow: -2px 0px rgb(73, 126, 84);
+    position: relative;
+
+}
+
+.profile:hover .profilebtn{
+    background:rgb(73, 126, 84);
+    height: px;
+    color: #f28500;
+    border: 2px solid rgb(163, 146, 109);
+
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 48px;
+    box-shadow: -2px 0px rgb(73, 126, 84);
+    border-radius: 5%;
+  }
+
+  .nav_bar_border a:hover, .dropdown:hover .dropbtn {
+    background:rgb(73, 126, 84);
+    color: #f28500;
+}
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: -2px 2px rgba(241, 182, 142, 0.2);
+    z-index: 1;
+    margin-left: -25%;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    font-size: 80%;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    margin-left: 0%;
+    font-weight: 500;
+    text-align: center;
+
+  }
+
+  .dropdown-content a:hover {
+    background:rgb(218, 233, 221);
+    font-weight: bold;
+
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+div.background_image{
+    background:rgb(62, 110, 72);
+    height:250px;
+    width:1000px;
+    border: 1px solid rgb(62, 110, 72);
+    margin-top:3.8%;
+    left: 0%;
+}
+
+div.background_image img{
+    border-radius:0%;
+    height:250px;
+    width:1000px;
+    border: 1px solid rgb(163, 146, 109);
+    padding: 0px;
+    left:0%;
+
+}
+
+div.profile_image{
+    margin-top:-11.5%;
+    margin-left:-1%;
+}
+
+div.profile_image img{
+    border-radius:50%;
+    border: 2px solid rgb(163, 146, 109);
+    padding: 0px;
+    height:150px;
+    width:130px;
+}
+
+div.username p{
+    font: bold;
+    font-size: 150%;
+    font-weight: bold;
+    color: white;
+    margin-left: 12%;
+    margin-top: -3%;
+
+}
+
+div.template{
+    height: 45px;
+    width: 1000px;
+    background: #f28500;
+    border: 1px solid rgb(163, 146, 109);
+    margin-top: -0.1%;
+    padding: 1px;
+    position: static;
+
+}
+
+div.career{
+    width: 0px;
+    /* background: red; */
+}
+
+.careerbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: 120%;
+    font-weight: bold;
+    padding: 1px 10px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 42px;
+    border-radius: 0%;
+    box-shadow: -2px 0px #d67601;
+    position: relative;
+}
+.activitybtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 120%;
+    padding: 1px 10px;
+    font-weight: bold;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 42px;
+    border-radius: 0%;
+    box-shadow: -2px 0px #d67601;
+    position: relative;
+}
+
+.career:hover .careerbtn{
+    background: rgb(219, 196, 146);
+    height: 42px;
+    color: #f28500;
+}
+
+.activity:hover .activitybtn{
+    background: rgb(219, 196, 146);
+    height: 42px;
+    color: #f28500;
+}
+
+.profileSetting .settingbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 42px;
+    box-shadow: -2px 0px #d67601;
+    border-radius: 5%;
+  }
+
+.career a:hover, .profileSetting:hover .settingbtn {
+    background: rgb(219, 196, 146);
+    height: 40px;    
+    color: #f28500;
+}
+
+.setting-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: -2px 2px rgba(241, 182, 142, 0.2);
+    z-index: 1;
+    margin-left: 0%;
+}
+
+.setting-content a {
+    float: none;
+    color: black;
+    font-size: 80%;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    margin-left: 0%;
+    font-weight: 500;
+    text-align: center;
+
+  }
+
+.setting-content a:hover {
+    background:rgb(218, 233, 221);
+    font-weight: bold;
+
+}
+
+.profileSetting:hover .setting-content {
+    display: block;
+}
+
+
+
+div.online_pro{
+    height: 620px;
+    width: 200px;
+    background: rgb(228, 243, 232);
+    /* background-color: rgb(219, 196, 146); */
+    /* border: 2px solid rgb(241, 203, 119); */
+    border: 2px solid rgb(216, 230, 219);
+    padding: 0px;
+    bottom: 0%;
+    right: 0.3%;
+    overflow:auto;
+    position: fixed;
+}
+
+div.online_pro_search{
+    height: 25px;
+    width: 200px;
+    background: rgb(62, 110, 72);
+    right: 0.3%;
+    bottom: 0%;
+    position: fixed;
+    border-radius: 20%;
+
+}
+
+div.online_pro_search input{
+    width: 200px;
+}
+
+div.career_point{
+    height: 750px;
+    width: 608px;
+    background-color: rgb(219, 196, 146);
+    margin-left: 30%;
+    margin-top: 0.5%;
+    border: 2px solid rgb(241, 203, 119);
+
+}
+.current_designation{
+    margin-top: 0.3%;
+    margin-left: 0%;
+    max-width: 27.8em;
+    background: rgb(216, 230, 219);
+    /* background: rgb(228, 243, 232); */
+}
+mat-icon.Fork_add_circle_outline{
+    margin-left: -150px;
+    font-size: 200%;
+    font-weight: 500;
+    color: #f28500;
+    /* color: rgb(30, 83, 42); */
+
+}
+
+.experience-card {
+    margin-left: 30%;
+    max-width: 608px;
+    margin-top: 1%;
+    background: rgb(228, 243, 232);
+    /* background: rgb(216, 230, 219); */
+}
+
+.education-card {
+    margin-left: 30%;
+    max-width: 608px;
+    margin-top: 1%;
+    background: rgb(228, 243, 232);
+    /* background: rgb(216, 230, 219); */
+}
+
+.mat-card-title{
+    min-width: 400px;
+}
+mat-icon.add_circle_outline{
+    margin-left: 50px;
+    font-size: 200%;
+    font-weight: 500;
+    color: #f28500;
+    /* color: rgb(30, 83, 42); */
+
+}
+
+mat-icon.editExperience{
+    margin-left: 50px;
+    font-size: 150%;
+    font-weight: 500;
+    color: #f28500;
+
+}
+
+mat-icon.editEducation{
+    margin-left: 50px;
+    font-size: 150%;
+    font-weight: 500;
+    color: #f28500;
+
+}
+
+.mat-card-subtitle{
+    min-width: 400px;
+    /* max-width: 500px; */
+    font-size: 150%;
+    
+}
+.mat-card-subtitle span.startDate, .mat-card-subtitle span.lastDate{
+    margin-left: 12%;
+    /* margin-top: 200px; */
+    color: #f28500;
+    /* background: #f28500; */
+    
+}
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+mat-progress-bar.skill_bar{
+    margin-left: -300px;
+    margin-top: 20px;
+}
+.skill_bar .mat-progress-bar-fill::after{
+    background-color: #f28500;
+}
+
+div.post_template{
+    height: 150px;
+    width: 608px;
+    margin-left: 30%;
+    margin-top: -64.55%;
+    border: 1px solid rgb(241, 203, 119);
+    background-color: rgb(219, 196, 146);
+    border-radius: 1%;
+}
+
+.new_post_template{
+    margin-left: 30%;
+    max-width: 608px;
+    margin-top: -70%;    
+    background: rgb(216, 230, 219);
+}
+.new_post_template .send{
+    /* border: 2px solid rgb(163, 146, 109);
+    padding: 10px; */
+    margin-left: 90%;
+    font-size: 300%;
+}
+.new_post_template .live_tv{
+    margin-top: 0px;
+    margin-left: 70%;
+    font-size: 300%;
+}
+
+textarea.post_container{
+    resize: none;
+    vertical-align: middle;
+    margin-left: 2%;
+    margin-top: 5.3%;
+
+}
+div.post_footer{
+    height: 50px;
+    width: 606px;
+    margin-left: 0%;
+    margin-top: 0%;
+    border: 0px solid rgb(241, 203, 119);
+    background-color: white;
+    border-radius: 1%;
+
+}
+
+.video_clip_btn, .file_attach_btn, .normal_text_btn, .pxcode_btn{
+    border: none;
+    outline: none;
+    color: #f28500;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 1px 42px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 50px;
+    border-radius: 0%;
+    box-shadow: -1px 1px rgb(241, 203, 119);
+    position: relative;
+}
+.video_clip:hover .video_clip_btn, .file_attach:hover .file_attach_btn, .normal_text:hover .normal_text_btn, .pxcode:hover .pxcode_btn{
+    background-color: rgb(219, 196, 146);
+    height: 50px;
+    color: #f28500;
+}
+
+.post_btn {
+    border: none;
+    outline: none;
+    color: white;
+    /* background-color:white; */
+    background-color: rgb(219, 196, 146);
+    font-size: 120%;
+    font-weight: bold;
+    padding: 1px 20px;
+    font-family: inherit;
+    margin: 0;
+    text-align: justify;
+    height: 64px;
+    width: 90px;
+    border-radius: 0%;
+    box-shadow: -1px 0px rgb(241, 203, 119);
+    position: relative;
+}
+
+.post:hover .post_btn{
+    background-color: white;
+    height: 63px;
+    color: #f28500;
+}
+
+
+
+div.designation {
+    height: 8em;
+    width: 27.9em;
+    margin-top: 0%;
+    margin-left:0%;
+    background-color: rgb(219, 196, 146);
+    border: 2px solid rgb(241, 203, 119);
+}
+
+div.designation_conditional {
+    height: 5em;
+    width: 27em;
+    margin-top: -57.38%;
+    margin-left:0%;
+    background-color: rgb(219, 196, 146);
+}
+
+div.designation p.profession {
+    margin-left: 25%;
+    margin-top: -8%;    
+    font-size: 120%;
+    font-weight: bold;
+    color: #422605;
+}
+
+div.designation p.at {
+    margin-left: 50%;
+    font-size: 120%;
+    color: black;
+}
+
+div.designation p.organisation {
+    margin-left: 20%;
+    font-size: 120%;
+    color: black;
+}
+
+div.about {
+    height: 10em;
+    width: 27.9em;
+    margin-top: 0%;
+    margin-left:0%;
+    background-color: rgb(219, 196, 146);
+    border: 2px solid rgb(241, 203, 119);
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+div.past_designation {
+    height: 10em;
+    width: 27.9em;
+    margin-top: 0%;
+    margin-left:0%;
+    background-color: rgb(219, 196, 146);
+    border: 2px solid rgb(241, 203, 119);
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+div.skills {
+    height: 10em;
+    width: 27.9em;
+    margin-top: 0%;
+    margin-left:0%;
+    background-color: rgb(219, 196, 146);
+    border: 2px solid rgb(241, 203, 119);
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+div.articles {
+    height: 10em;
+    width: 27.9em;
+    margin-top: 0%;
+    margin-left:0%;
+    background-color: rgb(219, 196, 146);
+    border: 2px solid rgb(241, 203, 119);
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+
+div.update_template{
+    height: 452px;
+    width: 390px;
+    margin-top: 0%;
+    margin-left: 0%;
+    /* border: 1px solid rgb(241, 203, 119); */
+    border: 1px solid rgb(216, 230, 219);
+    background: rgb(216, 230, 219);
+    /* background-color: rgb(219, 196, 146); */
+    border-radius: 1%;
+    
+}
+  
+div.update_template p.update_label, p.counts{
+    color: #f28500;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: justify;
+  
+}
+  
+div.update_template .update_container{
+    height: 260px;
+    width: 380px;
+    margin-top: -2%;
+    margin-left: 1%;
+    border: 1px solid rgb(241, 203, 119);
+    background-color: white;
+    border-radius: 1%;
+    
+}
+
+div.about p.description{
+    margin-left:0%;
+    font-size: 120%;
+    color: black;
+
+}
+
+div.past_designation p.description{
+    margin-left:0%;
+    font-size: 90%;
+    color: black;
+
+}
+
+div.designation p.edit{
+    margin-left:90%;
+    font-size: 120%;
+    color: black;
+
+}
+
+div.about p.edit{
+    margin-left:90%;
+    font-size: 120%;
+    color: black;
+
+}
+
+div.past_designation p.edit{
+    margin-left:90%;
+    font-size: 120%;
+    color: black;
+
+}
+
+div.skills p.edit{
+    margin-left:90%;
+    font-size: 120%;
+    color: black;
+
+}
+
+div.articles p.edit{
+    margin-left:90%;
+    font-size: 120%;
+    color: black;
+
+}
+
+.dropBackColor{
+    /* opacity: 0.3; */
+    /* background-color: transparent; */
+    /* background: rgb(228, 243, 232); */
+    /* background-color: #d67601; */
+
+
+    
+}
+.panelClass .mat-dialog-container{
+    /* opacity: 0.3; */
+    /* height: 200px; */
+    /* width: 200px; */
+    background-color:rgb(228, 243, 232);
+    margin-top: 15%;
+    /* background-color:rgb(241, 203, 119) */
+    /* background-color: transparent; */
+
+}

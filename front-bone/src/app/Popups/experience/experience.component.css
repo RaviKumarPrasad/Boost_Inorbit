@@ -1,0 +1,68 @@
+
+
+.experience{
+    height: 100%;
+    width: 100%;
+    /* background-color: coral; */
+}
+.mat-dialog-title{
+    /* background-color: coral; */
+    
+}
+.mat-dialog-content{
+    /* background-color:rgb(228, 243, 232); */
+}
+/* 
+.mat-form-field-empty.mat-form-field-label {
+    color: green;
+} */
+
+
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label  {
+    color: #f28500;
+}
+
+::ng-deep .mat-form-field-empty.mat-form-field-label {
+    color: #f28500;
+}
+
+::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color:#f28500;
+}
+::ng-deep .mat-datepicker-toggle{
+    color:#f28500;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #f28500;
+}
+::ng-deep /*.mat-focused*/ .placeholder {
+    color: #f28500;
+    font-size: 150%;
+}
+
+.organization{
+    margin-left: 20%;
+}
+.to{
+    margin-left: 3%;
+}
+
+.to_Date{
+    margin-left: 10%;
+    
+}
+
+.present_Date{
+    margin-left: 10%;
+}
+
+.description_field {
+    width: 600px;
+}
+.description{
+    background: white;
+    resize: none;
+
+}

@@ -1,0 +1,35 @@
+
+
+div.company_details{
+    /* background-color: rgb(219, 196, 146); */
+    background-color: inherit;
+}
+
+mat-grid-tile {
+    background: lightblue;
+}
+
+mat-dialog-content{
+    /* background:#f285007e; */
+    height: 100%;
+    width: 104.5%;
+}
+
+div.album{
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    margin-left: 0%;
+    margin-top: 3%;
+}
+
+
+div.cancel{
+    margin-top: -2%;
+    margin-left:98.5%;
+}
+div.cancel .cancelBtn{
+    background-color:#f28500;
+
+}
+

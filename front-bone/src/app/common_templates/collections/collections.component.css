@@ -1,0 +1,99 @@
+
+
+div.company_details{
+    /* background-color: rgb(219, 196, 146); */
+    background-color: inherit;
+
+}
+
+
+
+mat-grid-tile {
+    background: lightblue;
+    
+}
+mat-dialog-content{
+    background:#f285007e;
+    height: 100%;
+    width: 104.5%;
+}
+
+div.album{
+    height: 10%;
+    width: 10%;
+    background-color: springgreen;
+    margin-left: 0%;
+    margin-top: 3%;
+}
+
+div.background{
+    height: 10%;
+    width: 10%;
+    background-color: springgreen;
+    margin-left: 15%;
+    margin-top: -4.5%;
+}
+
+
+div.cancel{
+    margin-top: -2%;
+    margin-left:98.5%;
+}
+div.cancel .cancelBtn{
+    background-color:#f28500;
+
+}
+
+
+div.company_details div.p_add {
+    margin-left: 40%;
+    margin-top: 0px;
+
+}
+div.add_button {
+    margin-left: 80%;
+
+}
+div.add_button p {
+    margin-top: 0%;
+
+}
+
+div.add_button .button{
+    margin-left: 80%;
+
+    text-underline-position: below;
+    border: none;
+    outline: none;
+    color: rgb(62, 110, 72);
+    font-size: 120%;
+    font-weight: bold;
+    padding: 1px 10px;
+    background-color:inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 40px;
+    border-radius: 10%;
+    position: relative;
+}
+div.add_button button:hover{
+    background: rgb(243, 205, 124);
+    height: 42px;
+    color: #f28500;
+}
+
+
+
+/*
+div.company_details{
+    margin-top: 0%;
+    height: 300px;
+}
+
+*/
+
+div.d_fc_details{
+    -webkit-margin-bottom-collapse: inherit;
+    height: 100px;
+    margin-top: 100px;
+}
